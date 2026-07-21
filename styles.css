@@ -131,142 +131,6 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width:576px){
-
-    body{
-        padding-top:130px;
-    }
-
-    header{
-        flex-direction:column;
-        padding:15px;
-        gap:15px;
-    }
-
-    .logo h1{
-        font-size:22px;
-        text-align:center;
-    }
-
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
-
-    nav ul li{
-        margin:0;
-    }
-
-    .shaqo{
-        min-height:70vh;
-        padding:20px;
-    }
-
-    .shaqo h2{
-        font-size:32px;
-    }
-
-    .shaqo p{
-        font-size:17px;
-    }
-
-    .adeeg{
-        padding:40px 20px;
-    }
-
-    .cards{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .card{
-        width:100%;
-    }
-
-    .one{
-        width:100%;
-        padding:20px;
-    }
-
-    form{
-        width:100%;
-    }
-
-    .gallery img{
-        width:100%;
-        height:auto;
-    }
-
-    table{
-        display:block;
-        overflow-x:auto;
-    }
-
-}
-
-@media screen and (min-width:577px) and (max-width:768px){
-
-    body{
-        padding-top:100px;
-    }
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .logo h1{
-        font-size:28px;
-        text-align:center;
-    }
-
-    nav ul{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    nav ul li{
-        margin:0;
-    }
-
-    .shaqo{
-        min-height:80vh;
-    }
-
-    .shaqo h2{
-        font-size:42px;
-    }
-
-    .cards{
-        justify-content:center;
-    }
-
-    .card{
-        width:45%;
-    }
-
-    .gallery img{
-        width:45%;
-        height:220px;
-    }
-
-    .one{
-        width:90%;
-    }
-
-    form{
-        width:90%;
-    }
-
-    table{
-        display:block;
-        overflow-x:auto;
-    }
-
-}
-
 
 .one {
     background: white;
@@ -347,4 +211,140 @@ form .xariif {
 
 .xariif:hover {
     background: #0096c7;
+}
+
+@media screen and (max-width:576px) {
+
+    body {
+        padding-top: 130px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .shaqo {
+        min-height: 70vh;
+        padding: 20px;
+    }
+
+    .shaqo h2 {
+        font-size: 32px;
+    }
+
+    .shaqo p {
+        font-size: 17px;
+    }
+
+    .adeeg {
+        padding: 40px 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .one {
+        width: 100%;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    body {
+        padding-top: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .shaqo {
+        min-height: 80vh;
+    }
+
+    .shaqo h2 {
+        font-size: 42px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .gallery img {
+        width: 45%;
+        height: 220px;
+    }
+
+    .one {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
 }
