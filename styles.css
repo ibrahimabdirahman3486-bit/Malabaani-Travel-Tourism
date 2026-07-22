@@ -15,9 +15,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background: #0077b6;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    color: white;
+    padding: 12px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,6 +39,9 @@ header {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
@@ -115,7 +119,7 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-10px);
 }
 
@@ -213,109 +217,108 @@ form .xariif {
     background: #34c347;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:360px) and (max-width:768px) {
 
-header{
-    flex-direction:column;
-    padding:15px;
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .shaqo {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .shaqo h2 {
+        font-size: 32px;
+    }
+
+    .shaqo p {
+        font-size: 16px;
+    }
+
+    .one {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+
 }
+@media screen and (min-width:769px) and (max-width:1024px) {
 
-.logo h1{
-    font-size:24px;
-    text-align:center;
-}
+    .cards {
+        justify-content: center;
+    }
 
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-}
+    .card {
+        width: 45%;
+    }
 
-nav ul li{
-    margin:0;
-}
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
-.shaqo{
-    height:70vh;
-    padding:20px;
-}
+    .gallery img {
+        width: 100%;
+        height: 220px;
+    }
 
-.shaqo h2{
-    font-size:32px;
-}
+    .one {
+        width: 90%;
+    }
 
-.shaqo p{
-    font-size:16px;
-}
-
-.one{
-    width:95%;
-    padding:20px;
-}
-
-.cards{
-    flex-direction:column;
-    align-items:center;
-}
-
-.card{
-    width:100%;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:15px;
-}
-
-.gallery img{
-    width:100%;
-    height:auto;
-}
-
-form{
-    width:95%;
-}
-
-table{
-    display:block;
-    overflow-x:auto;
-    white-space:nowrap;
-}
-
-body{
-    padding-top:120px;
-}
-
-}
-
-@media screen and (min-width:769px) and (max-width:1024px){
-
-.cards{
-    justify-content:center;
-}
-
-.card{
-    width:45%;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-.gallery img{
-    width:100%;
-    height:220px;
-}
-
-.one{
-    width:90%;
-}
-
-form{
-    width:80%;
-}
+    form {
+        width: 80%;
+    }
 
 }
