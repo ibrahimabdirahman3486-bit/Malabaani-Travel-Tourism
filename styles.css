@@ -217,11 +217,12 @@ form .xariif {
     background: #34c347;
 }
 
-@media screen and (max-width:360px) and (max-width:768px) {
+@media screen and (max-width:768px) {
 
     header {
         flex-direction: column;
         padding: 15px;
+        row-gap: 10px;
     }
 
     .logo h1 {
@@ -230,13 +231,20 @@ form .xariif {
     }
 
     nav ul {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
+        padding: 10px 0;
     }
 
     nav ul li {
         margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        padding: 8px;
     }
 
     .shaqo {
@@ -263,7 +271,12 @@ form .xariif {
     }
 
     .card {
+        width: 90%;
+    }
+
+    .xariif {
         width: 100%;
+        align-items: center;
     }
 
     .gallery {
@@ -273,12 +286,13 @@ form .xariif {
     }
 
     .gallery img {
-        width: 100%;
-        height: auto;
+        width: 90%;
+        margin: auto;
     }
 
     form {
-        width: 95%;
+        width: 90%;
+
     }
 
     table {
@@ -288,10 +302,11 @@ form .xariif {
     }
 
     body {
-        padding-top: 120px;
+        padding-top: 170px;
     }
 
 }
+
 @media screen and (min-width:769px) and (max-width:1024px) {
 
     .cards {
@@ -304,7 +319,6 @@ form .xariif {
 
     .gallery {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
