@@ -342,7 +342,10 @@ legend {
     }
 
     .shaqo {
-        min-height: 80vh;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+
     }
 
     .shaqo h2 {
