@@ -234,7 +234,6 @@ legend {
     background: #34c347;
 }
 
-
 @media screen and (min-width:577px) and (max-width:768px) {
 
     body {
@@ -255,7 +254,7 @@ legend {
     }
 
     nav ul {
-        display: flex;
+        display: block;
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
@@ -284,13 +283,12 @@ legend {
         width: 45%;
     }
 
-    .gallery {
+    .gallery{
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
         padding: 10px;
     }
-
     .gallery img {
         width: 200%;
         height: auto;
@@ -309,23 +307,19 @@ legend {
         display: block;
         overflow-x: auto;
     }
-
-    h1 {
+    h1{
         font-size: 28px;
         text-align: center;
     }
-
-    h2 {
+    h2{
         font-size: 24px;
         text-align: center;
     }
-
-    p {
+    p{
         font-size: 15px;
         text-align: center;
     }
-
-    footer {
+    footer{
         text-align: center;
         padding: 15px;
     }
