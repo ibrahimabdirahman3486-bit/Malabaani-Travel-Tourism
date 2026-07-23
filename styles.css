@@ -234,95 +234,18 @@ legend {
     background: #34c347;
 }
 
-@media screen and (max-width:576px) {
-
-    body {
-        padding-top: 130px;
-        height: auto;
-    }
-
-    header {
-        flex-direction: column;
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .logo h1 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        display: block;
-    }
-
-    nav ul li {
-        margin: 0;
-    }
-
-    .shaqo {
-        min-height: 70vh;
-        padding: 20px;
-    }
-
-    .shaqo h2 {
-        font-size: 32px;
-    }
-
-    .shaqo p {
-        font-size: 17px;
-    }
-
-    .adeeg {
-        padding: 40px 20px;
-    }
-
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .one {
-        width: 100%;
-        padding: 20px;
-    }
-
-    form {
-        width: 100%;
-        height: auto;
-    }
-
-    .gallery img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-
-}
-
 @media screen and (min-width:577px) and (max-width:768px) {
 
     body {
         padding-top: 100px;
-        height: auto;
+        width: 95%;
+        margin: auto;
     }
 
     header {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        padding: 15px;
     }
 
     .logo h1 {
@@ -331,14 +254,14 @@ legend {
     }
 
     nav ul {
+        display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
-        display: block;
+        gap: 10px;
     }
 
-    nav ul li {
-        margin: 0;
+    nav ul li a {
+        font-size: 14px;
     }
 
     .shaqo {
@@ -360,10 +283,15 @@ legend {
         width: 45%;
     }
 
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
     .gallery img {
-        width: 45%;
+        width: 200%;
         height: auto;
-        display: block;
     }
 
     .one {
@@ -378,6 +306,22 @@ legend {
     table {
         display: block;
         overflow-x: auto;
+    }
+    h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    p{
+        font-size: 15px;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+        padding: 15px;
     }
 
 }
