@@ -15,10 +15,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     background: #0077b6;
-    color: white;
-    padding: 12px 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,9 +38,6 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 nav ul li {
@@ -164,6 +160,11 @@ table th {
     color: white;
 }
 
+table tr:hover {
+    background-color: #9b9a9a;
+    color: #f5f7fa;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -213,42 +214,57 @@ form .xariif {
     margin-top: 20px;
 }
 
+fieldset {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+
+legend {
+    border: 1px dashed black;
+    margin-right: auto;
+    font-weight: bold;
+}
+
 .xariif:hover {
     background: #34c347;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:576px) {
+
+    body {
+        padding-top: 130px;
+        height: auto;
+    }
 
     header {
         flex-direction: column;
         padding: 15px;
-        row-gap: 10px;
+        gap: 15px;
     }
 
     .logo h1 {
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
     }
 
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 
     nav ul li {
         margin: 0;
-    }
-
-    nav ul li a {
-        font-size: 15px;
-        padding: 8px;
+        display: block;
     }
 
     .shaqo {
-        height: 70vh;
+        min-height: 70vh;
         padding: 20px;
     }
 
@@ -257,57 +273,79 @@ form .xariif {
     }
 
     .shaqo p {
-        font-size: 16px;
+        font-size: 17px;
     }
 
-    .one {
-        width: 95%;
-        padding: 20px;
+    .adeeg {
+        padding: 40px 20px;
     }
 
     .cards {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     .card {
-        width: 90%;
-    }
-
-    .xariif {
         width: 100%;
-        align-items: center;
     }
 
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .gallery img {
-        width: 90%;
-        margin: auto;
+    .one {
+        width: 100%;
+        padding: 20px;
     }
 
     form {
-        width: 90%;
+        width: 100%;
+        height: auto;
+    }
 
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    body {
-        padding-top: 170px;
     }
 
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+@media screen and (min-width:577px) and (max-width:768px) {
+
+    body {
+        padding-top: 100px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .shaqo {
+        min-height: 80vh;
+    }
+
+    .shaqo h2 {
+        font-size: 42px;
+    }
 
     .cards {
         justify-content: center;
@@ -317,13 +355,8 @@ form .xariif {
         width: 45%;
     }
 
-    .gallery {
-        display: grid;
-        gap: 20px;
-    }
-
     .gallery img {
-        width: 100%;
+        width: 45%;
         height: 220px;
     }
 
@@ -332,7 +365,12 @@ form .xariif {
     }
 
     form {
-        width: 80%;
+        width: 90%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
     }
 
 }
